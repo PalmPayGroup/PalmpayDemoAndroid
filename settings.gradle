@@ -1,0 +1,4 @@
+
+
+rootProject.name = "PalmpayDemoAndroid"
+include ':app'

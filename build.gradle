@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0'
+
+    }
+}
+allprojects {
+    repositories {
+
+        //release
+        maven {
+            credentials {
+                username "6296db614e333f028174803c"
+                password '08OKF84vrl]S'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2232232-release-QnGkiq/'
+        }
+
+
+        //snapshot
+        maven {
+            credentials {
+                username "6296db614e333f028174803c"
+                password '08OKF84vrl]S'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2232232-snapshot-jNAcnT/'
+        }
+        maven { url 'https://jitpack.io' }
+        google()
+        mavenCentral()
+    }
+}
