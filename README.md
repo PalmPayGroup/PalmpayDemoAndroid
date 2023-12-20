@@ -191,5 +191,10 @@ default<br> CashierDesk.Country.NG</td>
 
 }
 ```
+
+### Release history
+|  version   | update  | resources  |
+|  ----  | ----  | ----  |
+|  2.0.0.18  |  Strengthen review | [download](https://static.chuanyinet.com/files/felqddbs27fm6jsf/2.0.0.18.zip)  |
 ### Change Histroy
 
