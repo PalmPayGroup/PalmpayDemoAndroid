@@ -5,7 +5,7 @@
 <p>a. Configure the maven repository <br>
 Add the following maven repository configuration to the build.gradle file that is in your project root directory.</p>
 
-```java
+```Groovy
 allprojects {
     repositories {
 
@@ -38,9 +38,10 @@ allprojects {
 Add the SDK as a dependency in your module's (application-level) gradle file (usually app/build.gradle).</p>
 
 ⚠️⚠️⚠️ Introduce different packages for production environment and debugging
-```json
-dependencies {
 
+```Groovy
+dependencies {
+    ...
     //For production environment, please use the official package
     implementation 'com.palmpay.opensdk:payment-sdk-android:$versionName'
     implementation 'com.palmpay.opensdk:payment-sdk-core-android:$versionName'
@@ -51,9 +52,7 @@ dependencies {
 
     implementation "com.android.lib:lib_ui:1.0.46"
     implementation 'cn.tongdun:fraudmetrix:4.1.5.8@aar'
-
-
-    ......
+    ...
 
 }
 ```
@@ -101,6 +100,7 @@ ENV_PROD（production environment）</td>
 
 ### 3.Launch payment
 #### Demo code
+
 ```java
 private void pay(RespBean bean) {
 
@@ -173,7 +173,7 @@ default<br> CashierDesk.Country.NG</td>
  </table>
 
 #### 3.4 Payment result
- ```json
+ ```java
  public class Result {
 
     public static final int RESULT_CODE_SUCCESS = 1;
