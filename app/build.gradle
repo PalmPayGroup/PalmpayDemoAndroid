@@ -52,11 +52,14 @@ dependencies {
     implementation "com.android.lib:lib_ui:1.0.46"
     implementation 'cn.tongdun:fraudmetrix:4.1.5.8@aar'
 
+    //注意⚠️：生产环境一定要将包切到正式包
+
+    //生产环境请用正式包
     //implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.0.18'
     //implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.0.18'
 
 
-    //If you use debug version for debugging, please use xxx-SNAPSHOT version SDK
+    //测试环境请用SNAPSHOT包
     implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.0.18-SNAPSHOT'
     implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.0.18-SNAPSHOT'
 

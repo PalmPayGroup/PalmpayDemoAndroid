@@ -5,7 +5,7 @@ import com.transsnet.gcd.sdk.CashierDesk
 
 class App : Application() {
 
-    //请自行申请
+    //appId and appKey need to be applied by yourself
     private val appId ="appId"
     private val appKey = "appKey"
 
@@ -16,7 +16,7 @@ class App : Application() {
         builder.setAppId(appId)
         builder.setAppKey(appKey)
 
-        // 测试环境设置该值，生产环境删除该行代码
+        // Delete this line of code in the production environment
         builder.setEnv(CashierDesk.ENV_DEV)
         CashierDesk.init(this, builder)
 
