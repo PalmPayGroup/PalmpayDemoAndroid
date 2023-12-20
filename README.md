@@ -1,4 +1,7 @@
 # PalmpayDemoAndroid
+
+⚠️This demo is a test environment by default. If you need a production environment, modify ```app/build.gradle``` to introduce the production package, and delete ```builder.setEnv(CashierDesk.ENV_DEV)``` in App.java
+
 # Android SDK Integration Guide
 ### 1. Import the sdk
 
