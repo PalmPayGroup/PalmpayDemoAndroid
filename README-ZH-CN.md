@@ -202,6 +202,6 @@ public class Result {
 ### 发布历史
 |  version   | update  | resources  |
 |  ----  | ----  | ----  |
-|  2.0.0.18  |  加强校验 | [download](https://static.chuanyinet.com/files/felqddbs27fm6jsf/2.0.0.18.zip)  |
+|  2.0.0.18  |  加强校验 | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
 
 ### 更改历史记录
