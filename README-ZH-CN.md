@@ -5,7 +5,7 @@
 <p>a.配置maven存储库</p>
 <p>将以下maven存储库配置添加到项目根目录中的build.gradle文件中。</p>
 
-```java
+```Groovy
 allprojects {
     repositories {
 
@@ -38,7 +38,7 @@ allprojects {
 <p>将SDK添加为模块 (application-level) 文件中的依赖项  (usually app/build.gradle).</p>
 
 ⚠️⚠️⚠️ 使用前请确认环境，生产环境请切回生产包
-```json
+```Groovy
 dependencies {
     
   
@@ -109,7 +109,7 @@ ENV_PROD（生产环境）</td>
 
 #### 3.1 请求示例
 
-```json
+```java
 private void pay(RespBean bean) {
 
         PayReq req = new PayReq();
