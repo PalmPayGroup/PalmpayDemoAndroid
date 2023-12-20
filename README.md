@@ -1,6 +1,7 @@
 # PalmpayDemoAndroid
 
-[中文文档](./README.md)
+[中文文档](./README-ZH-CN.md)
+
 ⚠️This demo is a test environment by default. If you need a production environment, modify ```app/build.gradle``` to introduce the production package, and delete ```builder.setEnv(CashierDesk.ENV_DEV)``` in App.java
 
 
