@@ -206,8 +206,8 @@ public class Result {
 ```
 ### 示例代码 [Demo](https://github.com/PalmPayGroup/PalmpayDemoAndroid)
 ### 发布历史
-|  version   | update | resources  |
-|  ----  |-------| ----  |
-|  2.0.1.0  | 授权登陆  | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
-|  2.0.0.18  | 加强校验  | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
+| version  | update | resources  |
+|----------|-------| ----  |
+| 2.0.1.1  | 授权登陆  | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
+| 2.0.0.18 | 加强校验  | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
 ### 更改历史记录
