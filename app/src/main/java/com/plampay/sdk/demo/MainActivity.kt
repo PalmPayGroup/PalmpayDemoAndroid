@@ -8,14 +8,6 @@ import com.transsnet.gcd.sdk.CashierDesk
 import com.transsnet.gcd.sdk.config.Constants
 import com.transsnet.gcd.sdk.config.PayReq
 import com.transsnet.gcd.sdk.config.Result
-import com.transsnet.gcd.sdk.http.Api
-import com.transsnet.gcd.sdk.http.HttpApi
-import com.transsnet.gcd.sdk.http.req.PreCreateOrderReq
-import com.transsnet.gcd.sdk.http.resp.PreCreateOrderResp
-import com.transsnet.gcd.sdk.net.able.Cancelable
-import com.transsnet.gcd.sdk.net.rest.Request
-import com.transsnet.gcd.sdk.util.InitUtil
-import com.transsnet.gcd.sdk.util.ToastUtils
 
 class MainActivity : AppCompatActivity() {
 
@@ -61,6 +53,8 @@ class MainActivity : AppCompatActivity() {
         //sdkSessionId 由后台生成
         req.sdkSessionId = ""
 
+        //accessToken 授权登陆 token 如需授权登陆请传入
+        req.accessToken = ""
 
 
         CashierDesk.pay(

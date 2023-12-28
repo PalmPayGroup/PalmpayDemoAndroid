@@ -119,7 +119,9 @@ private void pay(RespBean bean) {
         req.orderAmount = bean.orderAmount  // order amout, long value
         req.payToken = bean.payToken  // payment token, return by pre-order api
         req.sdkSessionId = bean.sdkSessionId // sdk sesssion id, return by pre-order api
-
+        //accessToken Authorization login token
+        req.accessToken = ""
+     
 
 
         CashierDesk.pay(req, new OnPayResultListener() {
@@ -177,6 +179,10 @@ eg: Geneix - 4G data bundle</td>
       <td>country</td>  <td>country code</td>  <td>optional<br>
 default<br> CashierDesk.Country.NG</td>
    </tr>
+    <tr>
+      <td>accessToken</td>  <td>Authorization login token</td>  <td>optional<br>
+default<br> null</td>
+   </tr>
  </table>
 
 #### 3.4 Payment result
@@ -197,8 +203,9 @@ default<br> CashierDesk.Country.NG</td>
 ```
 
 ### Release history
-|  version   | update  | resources  |
-|  ----  | ----  | ----  |
-|  2.0.0.18  |  Strengthen review | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
+| version  | update  | resources  |
+|----------| ----  | ----  |
+| 2.0.1.1  |  Authorized login | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
+| 2.0.0.18 |  Strengthen review | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
 ### Change Histroy
 

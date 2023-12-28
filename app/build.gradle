@@ -60,8 +60,8 @@ dependencies {
 
 
     //测试环境请用SNAPSHOT包
-    implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.0.18-SNAPSHOT'
-    implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.0.18-SNAPSHOT'
+    implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.1.1-SNAPSHOT'
+    implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.1.1-SNAPSHOT'
 
 
 
