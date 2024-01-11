@@ -203,9 +203,10 @@ default<br> null</td>
 ```
 
 ### Release history
-| version  | update  | resources  |
-|----------| ----  | ----  |
-| 2.0.1.1  |  Authorized login | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
-| 2.0.0.18 |  Strengthen review | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
+| version  | update            | resources  |
+|----------|-------------------| ----  |
+| 2.0.1.2  | Fix bugs          | [download](https://static.chuanyinet.com/files/felr8xiak7dm4j1c/2.0.1.2.zip)  |
+| 2.0.1.1  | Authorized login  | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
+| 2.0.0.18 | Strengthen review | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
 ### Change Histroy
 
