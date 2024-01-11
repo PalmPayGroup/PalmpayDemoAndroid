@@ -79,7 +79,6 @@ public class App extends Application {
 
         CashierDesk.Builder builder = new CashierDesk.Builder();
         builder.setAppId(appId);
-        builder.setAppKey(appKey);
 
         // 正式环境删除该行代码
         builder.setEnv(CashierDesk.ENV_DEV);

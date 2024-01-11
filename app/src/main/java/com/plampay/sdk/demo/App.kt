@@ -7,14 +7,12 @@ class App : Application() {
 
     //appId and appKey need to be applied by yourself
     private val appId ="appId"
-    private val appKey = "appKey"
 
     override fun onCreate() {
         super.onCreate()
 
         val builder = CashierDesk.Builder()
         builder.setAppId(appId)
-        builder.setAppKey(appKey)
 
         // Delete this line of code in the production environment
         builder.setEnv(CashierDesk.ENV_DEV)

@@ -72,7 +72,6 @@ public class App extends Application {
 
     //appId and appKey need to be applied by yourself
     private String appId ="appId";
-    private String appKey = "appKey";
     
     
     @Override
@@ -81,7 +80,6 @@ public class App extends Application {
 
         CashierDesk.Builder builder = new CashierDesk.Builder();
         builder.setAppId(appId);
-        builder.setAppKey(appKey);
 
         // Delete this line of code in the production environment
         builder.setEnv(CashierDesk.ENV_DEV);
