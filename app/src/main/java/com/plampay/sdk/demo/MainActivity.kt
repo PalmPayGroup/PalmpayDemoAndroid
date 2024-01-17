@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, WebViewActivity::class.java))
         }
         binding.clearCache.setOnClickListener {
+            //清理webView缓存
             Utils.clearCache(this)
         }
     }
