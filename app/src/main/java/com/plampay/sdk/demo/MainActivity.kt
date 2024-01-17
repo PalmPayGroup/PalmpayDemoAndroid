@@ -1,5 +1,6 @@
 package com.plampay.sdk.demo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.payButton.setOnClickListener {
             payOrder()
+        }
+
+        binding.toWeb.setOnClickListener {
+            startActivity(Intent(this, WebViewActivity::class.java))
+        }
+        binding.clearCache.setOnClickListener {
+            Utils.clearCache(this)
         }
     }
 
@@ -63,19 +71,25 @@ class MainActivity : AppCompatActivity() {
             when (result.resultCode) {
                 Result.RESULT_CODE_SUCCESS -> {
                     //支付成功
-                    Toast.makeText(this@MainActivity, "RESULT_CODE_SUCCESS", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "RESULT_CODE_SUCCESS", Toast.LENGTH_LONG)
+                        .show()
                 }
+
                 Result.RESULT_CODE_FAIL -> {
                     //支付失败
                     Toast.makeText(this@MainActivity, "RESULT_CODE_FAIL", Toast.LENGTH_LONG).show()
                 }
+
                 Result.RESULT_CODE_PENDING -> {
                     //支付中
-                    Toast.makeText(this@MainActivity, "RESULT_CODE_PENDING", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "RESULT_CODE_PENDING", Toast.LENGTH_LONG)
+                        .show()
                 }
+
                 Result.RESULT_CODE_CANCEL -> {
                     //取消支付
-                    Toast.makeText(this@MainActivity, "RESULT_CODE_CANCEL", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "RESULT_CODE_CANCEL", Toast.LENGTH_LONG)
+                        .show()
                 }
             }
         }

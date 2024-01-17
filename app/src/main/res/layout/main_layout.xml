@@ -12,4 +12,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/to_web"
+        android:text="To WEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pay_button" />
+
+    <Button
+        android:id="@+id/clear_cache"
+        android:text="Clear Web Cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/to_web" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
