@@ -54,7 +54,6 @@ class WebViewActivity : AppCompatActivity() {
                         Toast.makeText(this@WebViewActivity, "拉端失败", Toast.LENGTH_LONG).show()
                         e.printStackTrace()
                     }
-
                     return true
                 }
                 return super.shouldOverrideUrlLoading(view, request)
@@ -62,6 +61,6 @@ class WebViewActivity : AppCompatActivity() {
 
         }
 
-        binding.webView.loadUrl("file:///android_asset/Test.html")
+        binding.webView.loadUrl("https://open-gw-daily.palmpay-inc.com/")
     }
 }

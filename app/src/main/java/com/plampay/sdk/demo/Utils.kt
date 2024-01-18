@@ -10,7 +10,7 @@ import android.webkit.WebView
 object Utils {
 
     @SuppressLint("SetJavaScriptEnabled")
-    fun clear(context: Context){
+    fun clear( url:String,context: Context){
         val webView = WebView(context)
         webView.settings.apply {
             javaScriptCanOpenWindowsAutomatically = true
@@ -21,10 +21,10 @@ object Utils {
             setSupportZoom(true)
             javaScriptEnabled = true
         }
-        webView.loadUrl("file:///android_asset/Test.html")
+        webView.loadUrl(url)
         Handler().postDelayed({
             webView.evaluateJavascript("(function() { window.localStorage.clear();\n" +
-                    "          return 'Hello, World!'; })();"
+                    "          return '清除成功'; })();"
             ) { value ->
                 Log.d(">>>>", value!!) // "Hello, World!"
             }

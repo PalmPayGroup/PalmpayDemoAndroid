@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, WebViewActivity::class.java))
         }
         binding.clearCache.setOnClickListener {
-            //清理webView缓存数据
-            WebStorage.getInstance().deleteAllData()
+            //清理checkout-daily.palmpay.com 域名下的webView缓存数据
+            Utils.clear("https://checkout-daily.palmpay.com/h5-checkout/",this)
         }
     }
 
