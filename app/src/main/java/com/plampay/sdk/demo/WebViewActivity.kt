@@ -61,6 +61,6 @@ class WebViewActivity : AppCompatActivity() {
 
         }
 
-        binding.webView.loadUrl("https://open-gw-daily.palmpay-inc.com/")
+        binding.webView.loadUrl("https://checkout-daily.palmpay.com/h5-checkout/")
     }
 }
