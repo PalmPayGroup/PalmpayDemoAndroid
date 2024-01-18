@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             //清理checkout-daily.palmpay.com 域名下的webView缓存数据
             //https://checkout-daily.palmpay.com/h5-checkout/ 测试域名
             //https://checkout.palmpay.com/h5-checkout/ 正式域名
-            Utils.clear("https://checkout-daily.palmpay.com/h5-checkout/",this)
+            Utils.clear("https://checkout-daily.palmpay.com/h5-checkout/",application)
         }
     }
 
