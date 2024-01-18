@@ -61,6 +61,6 @@ class WebViewActivity : AppCompatActivity() {
 
         }
 
-        binding.webView.loadUrl("https://checkout-daily.palmpay.com/h5-checkout/?countryCode=NG&payToken=2A0193D7DF49C88ABA359FA81E355804&orderNo=2424240118074501987143&signKey=6NIlvTDXPBrsmZLt5kzEJChrwc86AcIaBXFyTq0hVS4&signSession=2424240118074501987143&appId=L231127054769719185611&productType=pay_wallet&callable=true")
+        binding.webView.loadUrl("https://checkout-daily.palmpay.com/")
     }
 }
