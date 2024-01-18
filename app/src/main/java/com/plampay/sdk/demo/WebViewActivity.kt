@@ -43,8 +43,14 @@ class WebViewActivity: AppCompatActivity() {
                     view?.loadUrl(url)
                     return super.shouldOverrideUrlLoading(view, request)
                 } else if (url?.startsWith("pay://") == true) {
-                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-                    Toast.makeText(this@WebViewActivity,"拉端失败", Toast.LENGTH_LONG).show()
+                    try {
+                        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                    }catch (e:Exception){
+                        //需要自己处理逻辑
+                        Toast.makeText(this@WebViewActivity,"拉端失败", Toast.LENGTH_LONG).show()
+                        e.printStackTrace()
+                    }
+
                     return true
                 }
                 return super.shouldOverrideUrlLoading(view, request)
