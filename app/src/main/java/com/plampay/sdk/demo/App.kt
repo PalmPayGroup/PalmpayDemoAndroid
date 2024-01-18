@@ -5,7 +5,7 @@ import com.transsnet.gcd.sdk.CashierDesk
 
 class App : Application() {
 
-    //appId and appKey need to be applied by yourself
+    //appId  need to be applied by yourself
     private val appId ="appId"
 
     override fun onCreate() {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+  
+    <div style="width: 100%; display: flex;justify-content: center; align-items: center; margin-top: 100px;">
+
+        <p id="name"></p>
+        <button onclick="setName()" style="font-size: 30px;">setName</button>
+
+    
+    </div>
+    <script>
+        function setName(){
+          var localStorage = window.localStorage;
+          localStorage.setItem('userAgent','hello')
+          document.getElementById('name').innerHTML =  localStorage.getItem('userAgent');
+        }
+
+        document.getElementById('name').innerHTML =  window.localStorage.getItem('userAgent');
+     </script>
+</body>
+</html>

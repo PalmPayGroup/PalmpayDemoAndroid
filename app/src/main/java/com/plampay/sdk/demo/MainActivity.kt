@@ -1,7 +1,9 @@
 package com.plampay.sdk.demo
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.webkit.WebStorage
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.plampay.sdk.demo.databinding.MainLayoutBinding
@@ -10,11 +12,13 @@ import com.transsnet.gcd.sdk.config.Constants
 import com.transsnet.gcd.sdk.config.PayReq
 import com.transsnet.gcd.sdk.config.Result
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: MainLayoutBinding
 
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MainLayoutBinding.inflate(layoutInflater)
@@ -29,8 +33,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, WebViewActivity::class.java))
         }
         binding.clearCache.setOnClickListener {
-            //清理webView缓存
-            Utils.clearCache(this)
+            //清理webView缓存数据
+            WebStorage.getInstance().deleteAllData()
         }
     }
 

@@ -12,9 +12,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.plampay.sdk.demo.databinding.WebActivityBinding
 
-class WebViewActivity: AppCompatActivity() {
+class WebViewActivity : AppCompatActivity() {
 
-    private lateinit var  binding :WebActivityBinding
+    private lateinit var binding: WebActivityBinding
+
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,13 +42,16 @@ class WebViewActivity: AppCompatActivity() {
                 val url = request?.url?.toString()
                 if (url?.startsWith("http") == true) {
                     view?.loadUrl(url)
-                    return super.shouldOverrideUrlLoading(view, request)
+                    return true
                 } else if (url?.startsWith("pay://") == true) {
                     try {
-                        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-                    }catch (e:Exception){
+                        val it = Intent(Intent.ACTION_VIEW)
+                        it.setData(Uri.parse(request.url?.toString()))
+                        it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(it)
+                    } catch (e: Exception) {
                         //需要自己处理逻辑
-                        Toast.makeText(this@WebViewActivity,"拉端失败", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@WebViewActivity, "拉端失败", Toast.LENGTH_LONG).show()
                         e.printStackTrace()
                     }
 
@@ -57,6 +61,7 @@ class WebViewActivity: AppCompatActivity() {
             }
 
         }
-        binding.webView.loadUrl("https://juejin.cn/?utm_source=gold_browser_extension")
+
+        binding.webView.loadUrl("file:///android_asset/Test.html")
     }
 }
