@@ -36,7 +36,7 @@ class WebViewActivity : AppCompatActivity() {
 
         binding.webView.webViewClient = object : WebViewClient() {
 
-            //Android 6.0以上不包括 6.0
+            //Android 7.0以上不包括 7.0
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
                 request: WebResourceRequest?
@@ -61,7 +61,7 @@ class WebViewActivity : AppCompatActivity() {
                 return super.shouldOverrideUrlLoading(view, request)
             }
 
-            //Android 6.0 以下 包括6.0
+            //Android 7.0 以下 包括7.0
             @Deprecated("Deprecated in Java")
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 if (url?.startsWith("http") == true) {
