@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings
 import android.webkit.WebView
@@ -35,6 +36,7 @@ class WebViewActivity : AppCompatActivity() {
 
         binding.webView.webViewClient = object : WebViewClient() {
 
+            //Android 6.0以上不包括 6.0
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
                 request: WebResourceRequest?
@@ -59,8 +61,30 @@ class WebViewActivity : AppCompatActivity() {
                 return super.shouldOverrideUrlLoading(view, request)
             }
 
+            //Android 6.0 以下 包括6.0
+            @Deprecated("Deprecated in Java")
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                if (url?.startsWith("http") == true) {
+                    view?.loadUrl(url)
+                    return true
+                } else if (url?.startsWith("pay://") == true) {
+                    try {
+                        val it = Intent(Intent.ACTION_VIEW)
+                        it.setData(Uri.parse(url))
+                        it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(it)
+                    } catch (e: Exception) {
+                        //需要自己处理逻辑
+                        Toast.makeText(this@WebViewActivity, "拉端失败", Toast.LENGTH_LONG).show()
+                        e.printStackTrace()
+                    }
+                    return true
+                }
+                return super.shouldOverrideUrlLoading(view, url)
+            }
+
         }
 
-        binding.webView.loadUrl("https://checkout-daily.palmpay.com/")
+        binding.webView.loadUrl("https://juejin.cn/?utm_source=gold_browser_extension")
     }
 }
