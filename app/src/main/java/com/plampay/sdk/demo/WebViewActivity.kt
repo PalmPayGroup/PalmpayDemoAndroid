@@ -85,6 +85,6 @@ class WebViewActivity : AppCompatActivity() {
 
         }
 
-        binding.webView.loadUrl("https://juejin.cn/?utm_source=gold_browser_extension")
+        binding.webView.loadUrl("https://checkout-daily.palmpay.com/h5-checkout/")
     }
 }
