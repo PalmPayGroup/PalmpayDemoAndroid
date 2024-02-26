@@ -55,13 +55,13 @@ dependencies {
     //注意⚠️：生产环境一定要将包切到正式包
 
     //生产环境请用正式包
-    //implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.1.2'
-    //implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.1.2'
+    //implementation 'com.palmpay.opensdk:payment-sdk-android:2.1.0.0'
+    //implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.1.0.0'
 
 
     //测试环境请用SNAPSHOT包
-    implementation 'com.palmpay.opensdk:payment-sdk-android:2.0.1.2-SNAPSHOT'
-    implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.0.1.2-SNAPSHOT'
+    implementation 'com.palmpay.opensdk:payment-sdk-android:2.1.0.0-SNAPSHOT'
+    implementation 'com.palmpay.opensdk:payment-sdk-core-android:2.1.0.0-SNAPSHOT'
 
 
 

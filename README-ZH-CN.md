@@ -205,9 +205,10 @@ public class Result {
 ```
 ### 示例代码 [Demo](https://github.com/PalmPayGroup/PalmpayDemoAndroid)
 ### 发布历史
-| version  | update  | resources  |
-|----------|---------| ----  |
-| 2.0.1.2  | 修复bug   | [download](https://static.chuanyinet.com/files/felr8xiak7dm4j1c/2.0.1.2.zip)  |
-| 2.0.1.1  | 授权登陆    | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
-| 2.0.0.18 | 加强校验    | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
+| version  | update | resources  |
+|----------|--------| ----  |
+| 2.1.0.0  | 唤端     | --                                                                            |
+| 2.0.1.2  | 修复bug  | [download](https://static.chuanyinet.com/files/felr8xiak7dm4j1c/2.0.1.2.zip)  |
+| 2.0.1.1  | 授权登陆   | [download](https://static.chuanyinet.com/files/felqon2k3t7q4j7q/2.0.1.1.zip)  |
+| 2.0.0.18 | 加强校验   | [download](https://static.chuanyinet.com/files/felqdezxeffuotvw/2.0.0.18.zip)  |
 ### 更改历史记录
